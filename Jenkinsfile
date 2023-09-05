@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout your Angular application code from SCM (e.g., Git)
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'YOUR_GIT_REPO_URL']]])
+                checkout scm
             }
         }
         
