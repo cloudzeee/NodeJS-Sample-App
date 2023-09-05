@@ -6,15 +6,6 @@ pipeline {
             steps {
                 checkout scm
             }
-        }
-        
-        stage('Install Dependencies') {
-            steps {
-                // Use Node.js to install project dependencies
-                run 'npm install'
-            }
-        }
-
        
     }
 
