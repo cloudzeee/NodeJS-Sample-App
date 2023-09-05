@@ -21,7 +21,7 @@ pipeline {
 
     post {
         success {
-            // Add post-build actions here if needed
+            echo 'This was successful'
         }
     }
 }
