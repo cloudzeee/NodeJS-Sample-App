@@ -11,7 +11,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Use Node.js to install project dependencies
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
